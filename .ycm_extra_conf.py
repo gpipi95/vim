@@ -32,7 +32,11 @@ import os
 import ycm_core
 
 flags = [
-    # INSERT FLAGS HERE
+'-Wall','-Wextra','-Werror',
+'-std=c11',
+'-x','c',
+'-ISUB','C:\\Program Files (x86)\\COSMIC\\CXSTM8_EVAL\\Hstm8',
+'-ISUB','C:\\Program Files (x86)\\STMicroelectronics\\st_toolset\\include',
 '-ISUB','.'
 ]
 
