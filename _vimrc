@@ -93,7 +93,7 @@ set completeopt -= "preview"
 
 let g:SuperTabDefaultCompletionType    = '<C-n>'
 let g:SuperTabCrMapping                = 0
-let g:UltiSnipsExpandTrigger           = '<tab>'
+let g:UltiSnipsExpandTrigger           = '<C-b>'
 let g:UltiSnipsJumpForwardTrigger      = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
 " If you want :UltiSnipsEdit to split your window.
@@ -110,6 +110,11 @@ let g:clang_format#detect_style_file = 0
 let g:clang_format#style_options = {
         \ "Language" : "Cpp",
         \ "BasedOnStyle" : "WebKit",
+        \ "AlignAfterOpenBracket" : "Align",
+        \ "AlignOperands" : "true",
+        \ "AlignConsecutiveAssignments" : "true",
+        \ "AlignConsecutiveDeclarations" : "true",
+        \ "AlignEscapedNewlines" : "Left",
         \ "AlignTrailingComments": "true"}
 
 """"""""""""""""""""""""""""""
