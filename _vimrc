@@ -65,8 +65,6 @@ call vundle#end()            " required
 """"""""""""""""""""""""""""""
 "let g:ycm_global_ycm_extra_conf = 'D:\green\Vim\vimfiles\bundle\.ycm_extra_conf.py' 
 let g:ycm_confirm_extra_conf = 0
-let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 "let g:ycm_global_ycm_extra_conf = $VIMPATH.'\.ycm_extra_conf.py'
 " 开启基于tag的补全，可以在这之后添加需要的标签路径  
 let g:ycm_collect_identifiers_from_tags_files=1
@@ -88,14 +86,16 @@ let g:ycm_complete_in_strings = 1
 "      \ 'nerdtree' : 1,
 "      \}
 " 修改对C函数的补全快捷键，默认是CTRL + space，修改为ALT + i
+let g:ycm_key_list_select_completion   = [ ]
+let g:ycm_key_list_previous_completion = [ ]
 let g:ycm_key_invoke_completion = '<C-b>'
 set completeopt -= "preview"
 
-let g:SuperTabDefaultCompletionType    = '<C-n>'
-let g:SuperTabCrMapping                = 0
-let g:UltiSnipsExpandTrigger           = '<C-b>'
-let g:UltiSnipsJumpForwardTrigger      = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
+"let g:SuperTabDefaultCompletionType    = '<C-n>'
+"let g:SuperTabCrMapping                = 0
+"let g:UltiSnipsExpandTrigger           = '<C-j>'
+"let g:UltiSnipsJumpForwardTrigger      = '<tab>'
+"let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 let g:airline#extensions#tabline#enable = 1
@@ -116,7 +116,6 @@ let g:clang_format#style_options = {
         \ "AlignConsecutiveDeclarations" : "true",
         \ "AlignEscapedNewlines" : "Left",
         \ "AlignTrailingComments": "true"}
-
 """"""""""""""""""""""""""""""
 "airline setting
 """"""""""""""""""""""""""""""
@@ -188,7 +187,7 @@ source $VIMRUNTIME/menu.vim
 "color
 """"""""""""""""""""""""""""""
 if has("gui_running")
-	colorscheme desert
+	colorscheme clarity
 else
 	colorscheme marklar
 endif
