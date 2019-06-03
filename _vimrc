@@ -37,13 +37,11 @@ filetype indent on
 set rtp+=$VIMRUNTIME/../bundle/Vundle.vim/
 call vundle#begin('$VIMRUNTIME/../bundle/')
 " let Vundle manage Vundle, required
-"Plugin 'Valloric/YouCompleteMe'
 Plugin 'Align'
 Plugin 'SirVer/ultisnips'
-Plugin 'Valloric/YouCompleteMe', {'pinned':1}
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'WolfgangMehner/c-support'
-Plugin 'ervandew/supertab'
 Plugin 'honza/vim-snippets'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rdnetto/YCM-Generator'
@@ -86,16 +84,16 @@ let g:ycm_complete_in_strings = 1
 "      \ 'nerdtree' : 1,
 "      \}
 " 修改对C函数的补全快捷键，默认是CTRL + space，修改为ALT + i
-let g:ycm_key_list_select_completion   = [ ]
-let g:ycm_key_list_previous_completion = [ ]
+"let g:ycm_key_list_select_completion   = [ ]
+"let g:ycm_key_list_previous_completion = [ ]
 let g:ycm_key_invoke_completion = '<C-b>'
 set completeopt -= "preview"
 
 "let g:SuperTabDefaultCompletionType    = '<C-n>'
 "let g:SuperTabCrMapping                = 0
-"let g:UltiSnipsExpandTrigger           = '<C-j>'
+let g:UltiSnipsExpandTrigger           = '<C-m>'
 "let g:UltiSnipsJumpForwardTrigger      = '<tab>'
-"let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
+"let g:UltiSnipsJumpBackwardTrigger     = '<C-p>'
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 let g:airline#extensions#tabline#enable = 1
