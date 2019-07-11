@@ -54,8 +54,8 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes' 
+Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'vim-scripts/a.vim'
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 """"""""""""""""""""""""""""""
@@ -159,7 +159,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set foldmethod=syntax
-set guioptions+=mT
+set guioptions-=T
+set guioptions+=!
 set laststatus=2            "只有一个窗口时也保留状态栏
 """"""""""""""""""""""""""""""
 "set wildmode """"""""""""""""
