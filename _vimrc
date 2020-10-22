@@ -43,6 +43,10 @@ filetype indent on
 """"""""""""""""""""""""""""""
 "vundle
 """"""""""""""""""""""""""""""
+set pythonthreedll=C:/Program\ Files/Python37/python37.dll
+if version > 801 
+   set pythonthreedll=D:/python38/python38.dll
+endif
 set rtp+=$VIMRUNTIME/../bundle/Vundle.vim/
 call vundle#begin('$VIMRUNTIME/../bundle/')
 " let Vundle manage Vundle, required
